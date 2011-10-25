@@ -1,0 +1,17 @@
+{application, lss_app,
+ [
+  {description, "Live Socket Server"},
+  {vsn, "1"},
+  {registered, [lss_app,
+                lss_client_sup,
+                lss_event_manager,
+                lss_listener,
+                lss_store]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, {lss_app, []}},
+  {env, []}
+ ]
+}.

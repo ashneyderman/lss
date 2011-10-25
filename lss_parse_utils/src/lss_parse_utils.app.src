@@ -1,0 +1,12 @@
+{application, lss_parse_utils,
+ [
+  {description, "LSS message parsing and construction utilities"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { lss_parse_utils, []}},
+  {env, []}
+ ]}.
